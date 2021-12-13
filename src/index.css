@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+
+body {
+    background-color: #171717 !important;
+    margin: 0;
+    font-family: "Roboto";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: white;
+    transition: all 700ms ease;
+}
+
+html {
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.particles {
+    min-height: 90vh;
+    max-height: 100vh;
+    z-index: -1;
+    position: fixed;
+}
+.tsparticles-canvas-el {
+    min-height: 100vh;
+    max-height: 100vh;
+}
+.frosted {
+    position: absolute;
+    background: inherit;
+}
+.frosted:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter: blur(2px);
+    background: inherit;
+    background-color: rgba(50, 50, 50, 0.9);
+    z-index: -1;
+}
+.fullpage {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    width: 100%;
+}
+.leftText {
+    position: absolute;
+    left: 15vw;
+}
+.topText{
+    position: absolute;
+    left: 40vw;
+    top: 5vh;
+}

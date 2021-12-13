@@ -1,0 +1,21 @@
+.App {
+  text-align: center;
+  margin: 0;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: White;
+}
+
+.AboutProjectDivide{
+  background-image: linear-gradient( #171717 0% , rgb(226, 226, 226) 100%);
+  height: 10vh;
+
+}

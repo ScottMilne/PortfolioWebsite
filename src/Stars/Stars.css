@@ -1,0 +1,161 @@
+#stars {
+    position:relative;
+    min-height: 100vh;
+}
+h1 {
+    color: green;
+}
+
+.landingTitle {
+    position: absolute;
+    top: 0;
+    color: white;
+    width: 100%;
+    height: auto;
+    font-size: 3em;
+    text-align: center;
+}
+.introText{
+    position: absolute;
+    top: 50vh;
+    left: 20vw;
+}
+.Typewriter{
+    font-size: 5vw;
+    font-family: Georgia, serif;
+}
+.Typewriter__cursor{
+    color: #533a7b;
+}
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.nameTextContainer {
+    width: 27vw;
+    height: 27vw;
+    min-width: 0;
+    min-height: auto;
+    margin: auto;
+    font-size: 1.2em;
+    color: #cfcfd0;
+    text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
+    font-family: "Roboto Slab", serif;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.nameText {
+    margin: 0;
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.moonImg {
+    width: 27vw;
+    height: 27vw;
+    min-width: 0px;
+    min-height: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.starArrow {
+    box-sizing: border-box;
+    height: 3vw;
+    width: 3vw;
+    border-style: solid;
+    border-color: white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    transition: border-width 150ms ease-in-out;
+}
+.starArrow:hover {
+    border-bottom-width: 4px;
+    border-right-width: 4px;
+}
+
+.starArrowContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 80vh;
+    left: 50%;
+}
+
+.cloud1{
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+}
+.cloud2{
+    right: 0;
+    position: absolute;
+}
+.cloud3{
+    position: absolute;
+    width: 100vw;
+    bottom: 0;
+}
+
+.spaceman {
+    width: 35vw;
+    position: absolute;
+    top: 0;
+    left: 10vw;
+    z-index: 1;
+}
+.spaceShip {
+    width: 100%;
+    position: absolute;
+    left: 4vw;
+}
+@media only screen and (max-width: 1553px) {
+    .nameText {
+        left: 0;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .moonImg {
+        width: 40vw;
+        height: 40vw;
+    }
+    .nameTextContainer {
+        width: 40vw;
+        height: 40vw;
+    }
+    .nameText {
+        right: 0;
+    }
+    
+}
+@media only screen and (max-width: 900px) {
+    .spaceman {
+        width: 50vw;
+        top: 30vh;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .moonImg {
+        position: relative;
+        top: 10vh;
+        width: 70vw;
+        height: 70vw;
+        min-width: 0;
+    }
+    .nameTextContainer {
+       display: none;
+    }
+}
+@media only screen and (max-width: 470px) {
+    .moonImg {
+        width: 100%;
+        height: auto;
+        min-width: 0;
+    }
+ 
+}

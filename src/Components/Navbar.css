@@ -1,0 +1,36 @@
+.navbar {
+  background-color: Transparent;
+  overflow: hidden;
+  color: #8c8c8c;
+  position: fixed;
+  z-index: 5;
+  top: 30vh;
+}
+.navbar ul {
+  margin: 0;
+  width: 100%;
+  list-style-type: none;
+  width: 100px;
+  line-height: 100px;
+  font-size: large;
+}
+.navbar li {
+  transition: all 0.6s;
+  margin-right: 1.5em;
+  display: block;
+}
+.navbar li:hover {
+  color: #533a7b;
+  cursor: pointer;
+}
+.activeNavItem {
+  color: #533a7b;
+}
+.navline {
+  border-left: 6px solid #31254463;
+  height: 60vh;
+  left: 70px;
+  position: fixed;
+  top: 20vh;
+  z-index: -1;
+}
