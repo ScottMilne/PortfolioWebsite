@@ -22,7 +22,6 @@ function MainPage(props) {
                 {props.subTypewrite}
             </div>
 
-
             <div className="rightText frosted">
                 <h1>{props.header}</h1>
                 <h2>{props.subheader}</h2>

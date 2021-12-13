@@ -1,73 +1,95 @@
 .fullPage {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    text-align: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.rightText {
+  display: inline;
+  width: 40vw;
+  right: 10vw;
+}
+
+#projectSection .rightText {
+  display: inline;
+  width: 45vw;
+  right: 10vw;
+}
+
+.rightText li {
+  margin: 1vh;
+  width: 90%;
+}
+
+.rightText h1 {
+  color: #e2e2e2;
+  font-size: 4em;
+  background-color: #5c3797;
+  width: 50%;
+  min-width: 200px;
+  margin: auto;
+  margin-top: 5vh;
+  margin-bottom: 3%;
+  overflow: hidden;
+}
+
+.rightText h2 {
+  margin-top: 0;
+  margin-left: 15%;
+  color: #e2e2e2;
+  background-color: #524c62;
+  width: 70%;
+  margin-bottom: 4%;
+  overflow: hidden;
+}
+
+#projectSection .rightText h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#projectSection .rightText h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.faceImg {
+  height: 20vw;
+  min-height: 200px;
+  margin-left: 20vw;
+  margin-right: 5vw;
+  margin-bottom: 3vh;
+  display: block;
+  overflow: hidden;
+}
+
+.socialTag {
+  margin-left: 1vw;
+  position: absolute;
+  left: 3vw;
+  margin-top: 30px;
+}
+
+@media only screen and (max-width: 1400px) {
+  .aboutText {
+    right: 2vw;
+    margin-right: 2vw;
   }
-  
-  .rightText {
-    display: inline;
-    width: 40vw;
-    right: 10vw;
+}
+
+@media only screen and (max-width: 1000px) {
+  #aboutSection {
+    display: inline-block;
   }
-  
-  .rightText li {
-    margin: 1vh;
-    width: 90%;
-  }
-  .rightText h1 {
-    color: #e2e2e2;
-    font-size: 4em;
-    background-color: #5c3797;
-    width: 50%;
-    min-width: 200px;
-    margin: auto;
-    margin-top: 5vh;
-    margin-bottom: 3%;
-    overflow: hidden;
-  }
-  .rightText h2 {
-    margin-top: 0;
-    margin-left: 15%;
-    color: #e2e2e2;
-    background-color: #524c62;
-    width: 70%;
-    margin-bottom: 4%;
-    overflow: hidden;
-  }
+
   .faceImg {
-    height: 20vw;
-    min-height: 200px;
-    margin-left: 20vw;
-    margin-right: 5vw;
-    margin-bottom: 3vh;
-    display: block;
-    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 10vh;
   }
+
   .socialTag {
-    margin-left: 1vw;
-    position: absolute;
-    left: 3vw;
-    margin-top: 30px;
+    left: 0;
+    margin-top: 3vh;
   }
-  
-  @media only screen and (max-width: 1400px) {
-    .aboutText {
-      right: 2vw;
-      margin-right: 2vw;
-    }
-  }
-  @media only screen and (max-width: 1000px) {
-    #aboutSection {
-      display: inline-block;
-    }
-    .faceImg {
-      margin: 0 auto;
-      margin-top: 10vh;
-    }
-    .socialTag {
-      left: 0;
-      margin-top: 3vh;
-    }
-  }
-  
+}
