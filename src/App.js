@@ -5,9 +5,14 @@ import LipSync from "./ProjectPages/LipSync";
 import Flock from "./ProjectPages/Flock";
 import Questie from "./ProjectPages/Questie";
 import Home from "./Home";
+import 'firebase/analytics'
+import firebase from "./Components/firebase";
 
 
 function App() {
+
+    firebase.analytics().logEvent('testing stuff');
+
     return (
         <div>
 
