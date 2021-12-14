@@ -19,9 +19,10 @@ h1 {
     position: absolute;
     top: 50vh;
     left: 20vw;
+    z-index: 1;
 }
 .Typewriter{
-    font-size: 5vw;
+    font-size: 80px;
     font-family: Georgia, serif;
 }
 .Typewriter__cursor{
@@ -122,7 +123,8 @@ h1 {
 @media only screen and (max-width: 1200px) {
     .moonImg {
         width: 40vw;
-        height: 40vw;
+        height: auto;
+        min-width: 250px;
     }
     .nameTextContainer {
         width: 40vw;
@@ -134,28 +136,27 @@ h1 {
     
 }
 @media only screen and (max-width: 900px) {
-    .spaceman {
-        width: 50vw;
-        top: 30vh;
+    .Typewriter{
+        font-size: 60px;
     }
 }
 @media only screen and (max-width: 800px) {
-    .moonImg {
-        position: relative;
-        top: 10vh;
-        width: 70vw;
-        height: 70vw;
-        min-width: 0;
-    }
     .nameTextContainer {
        display: none;
     }
 }
-@media only screen and (max-width: 470px) {
-    .moonImg {
-        width: 100%;
-        height: auto;
-        min-width: 0;
+@media only screen and (max-width: 600px) {
+    .introText{
+        left: 10vw;
+        margin-right: 10px;
     }
- 
+}
+@media only screen and (max-width: 500px) {
+    .moonImg{
+        position: initial;
+
+    }
+    .Typewriter{
+        font-size: 40px;
+    }
 }

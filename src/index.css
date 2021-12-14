@@ -48,7 +48,7 @@ a {
     bottom: 0;
     filter: blur(2px);
     background: inherit;
-    background-color: rgba(50, 50, 50, 0.9);
+    background-color: rgba(31, 31, 31, 0.9);
     z-index: -1;
 }
 .fullpage {
@@ -58,10 +58,7 @@ a {
     min-height: 100vh;
     width: 100%;
 }
-.leftText {
-    position: absolute;
-    left: 15vw;
-}
+
 .topText{
     position: absolute;
     left: 40vw;

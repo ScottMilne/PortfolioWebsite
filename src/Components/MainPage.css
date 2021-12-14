@@ -5,6 +5,11 @@
   text-align: center;
 }
 
+.leftText {
+  position: absolute;
+  left: 15vw;
+}
+
 .rightText {
   display: inline;
   width: 40vw;
@@ -38,7 +43,7 @@
   margin-top: 0;
   margin-left: 15%;
   color: #e2e2e2;
-  background-color: #524c62;
+  background-color: none;
   width: 70%;
   margin-bottom: 4%;
   overflow: hidden;
@@ -78,9 +83,23 @@
   }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1150px) {
   #aboutSection {
-    display: inline-block;
+    display: block;
+  }
+  #projectSection{
+    display: block;
+  }
+
+  .leftText {
+    position: inherit;
+    margin-bottom: 30px;
+    padding-top: 3vh;
+  }
+
+  .rightText {
+    right: 5%;
+    width: 90%;
   }
 
   .faceImg {
@@ -91,5 +110,34 @@
   .socialTag {
     left: 0;
     margin-top: 3vh;
+  }
+
+  .card{
+    margin-top: 1vw !important;
+    margin-bottom: 1vw !important;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  #projectSection .rightText {
+    width: 80vw;
+  }
+  .card{
+    margin: 1vw !important;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .rightText {
+    width: 98%;
+    right: 2%;
+    min-width: 210px;
+  }
+  .rightText h1 {
+    width: 90%;
+  }
+  .rightText h2 {
+    width: 90%;
+    margin-left: 5%;
   }
 }

@@ -51,6 +51,8 @@ function Home() {
                         </h3>
                     </li>]}
             />
+
+
             <div className="particles">
                 <Particles
                     params={{
@@ -135,30 +137,8 @@ function Home() {
                                 </div>
                             }
                             header='Scott Milne'
-                            subheader='Junior Web Developer'
-                            content={
-                                <ul>
-                                    <li>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in
-                                        tincidunt lorem. Suspendisse malesuada sapien vel aliquam
-                                        scelerisque. Orci varius natoque penatibus et magnis dis parturient
-                                        montes, nascetur ridiculus mus. Curabitur sit amet nisi massa.
-                                        Aenean eleifend velit vel elementum vehicula. Nullam blandit enim id
-                                        nisi pulvinar, ac pellentesque mi fringilla. Sed vitae tempor velit.
-                                        Morbi vel ligula augue. Suspendisse potenti. Quisque semper metus
-                                        tellus, vitae pulvinar libero rutrum a. Integer ac elementum sem,
-                                        vel porttitor dolor. Nullam eget tincidunt enim, nec pulvinar quam.
-                                        Curabitur nec odio pulvinar, tempor magna vitae, placerat lorem.
-                                        Duis neque est, malesuada sed ullamcorper nec, venenatis mattis
-                                        felis.
-                                    </li>
-                                    <li>
-                                        Nulla facilisi. Vestibulum molestie est vitae tortor sodales
-                                        dapibus. Aliquam erat volutpat. Nullam imperdiet tellus et ante
-                                        eleifend aliquam. Nunc in urna volutpat, porta quam et, facilisis
-                                        risus.
-                                    </li>
-                                </ul>}
+                            subheader='Im a Junior Web Developer and recent graduate from Abertay university based in Glasgow, Scotland'
+            
                         />
                     </FullpageSection>
                     <FullpageSection><MainPage
@@ -168,8 +148,8 @@ function Home() {
                             <div className="cards">
                                 <ProjectCard id="lipsyncCard" link='/Projects/LipSync' img={Lips} title="LipSync" desc="A web app designed to produce phonetically accurate lip movements from mic
                             input"/>
-                                <ProjectCard id="FlockCard" link='/Projects/Flock' img={Boids} title="Flocking With Predators" desc="A flocking algorithm with predators chasing prey"/>
-                                <ProjectCard id="QuestieCard" link='/Projects/Questie' img={Questie} title="LipSync" desc="A mobile app that allows users to create and complete quests"/>
+                                <ProjectCard id="FlockCard" link='/Projects/Flock' img={Boids} title="Flocking With Predators" desc="A flocking algorithm with predators chasing prey" />
+                                <ProjectCard id="QuestieCard" link='/Projects/Questie' img={Questie} title="LipSync" desc="A mobile app that allows users to create and complete quests" />
                             </div>
                         }
                     />
