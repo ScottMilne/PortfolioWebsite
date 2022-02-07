@@ -15,40 +15,24 @@
 }
 
 .projectDesc {
-    right: 10vw;
-    top: 10vh;
+    right: 20vw;
     width: 60vw;
     height: 90.4vh;
     text-align: center;
-    position: absolute;
 }
-
 .projectDesc p {
-    margin: 50px;
+    padding-left: 50px;
     font-size: 30px;
     line-height: 38px;
+    text-align: left;
+    word-break: break-word;
 }
-
-.projectDesc2 {
-    right: 10vw;
-    width: 60vw;
-    height: 97vh;
-    text-align: center;
-    position: absolute;
-}
-
-.projectDesc2 p {
-    margin: 50px;
-    font-size: 30px;
-    line-height: 38px;
-}
-
 .img1 {
     width: 60%;
 }
-
-.img2 {
-    width: 50%;
-    margin: 3vh;
-    float: left;
+.row{
+    display: flex;
+}
+.column {
+    flex: 50%;
 }

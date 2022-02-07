@@ -38,18 +38,7 @@ a {
 .frosted {
     position: absolute;
     background: inherit;
-}
-.frosted:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    filter: blur(2px);
-    background: inherit;
-    background-color: rgba(31, 31, 31, 0.9);
-    z-index: -1;
+    background-color: #171717e0;
 }
 .fullpage {
     display: flex;

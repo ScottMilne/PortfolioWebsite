@@ -5,6 +5,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Typewriter from 'typewriter-effect';
 import { SocialIcon } from "react-social-icons";
+import scrollIcon from "./../Images/scroll.json";
+import Lottie from "react-lottie-player";
 import "./MainPage.css";
 
 function MainPage(props) {
@@ -12,7 +14,7 @@ function MainPage(props) {
     return (
         <div id={props.id} className="fullPage">
 
-            <div className="leftText">
+            <div className="leftText frosted">
                 <Typewriter
                     onInit={(typewriter) => {
                         typewriter.typeString(props.typewrite)
@@ -27,6 +29,8 @@ function MainPage(props) {
                 <h2>{props.subheader}</h2>
                 {props.content}
             </div>
+
+
         </div>
     );
 }

@@ -31,7 +31,7 @@ function Stars() {
         <img className="moonImg" src={Moon} alt=""></img>
       </div>
 
-      <div className="starArrowContainer">
+      <div className="starArrowContainer" onClick={e => document.getElementById('aboutSection').scrollIntoView()}>
         <Lottie className="scrollIcon" loop animationData={scrollIcon} play />
       </div>
     </div>

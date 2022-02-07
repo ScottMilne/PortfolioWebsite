@@ -77,22 +77,15 @@ function ProjectPage(props) {
 
             <Fullpage>
                 <FullPageSections>
-                    <FullpageSection>
-                        <div className="projectDesc frosted">
-                            <h1 className="projectTitle">{props.title}</h1>
-                            <img className="img1" src={props.img1} />
-                            <p>{props.content1}</p>
-                            <div>Scroll for more ↓</div>
+                    <div className="projectDesc frosted">
+                        <h1 className="projectTitle">{props.title}</h1>
+
+                        <div className="row">
+                            <img className="img1 column" src={props.img1} />
+                            <p className="column">{props.content1}</p>
                         </div>
-                    </FullpageSection >
-                    <FullpageSection>
-                        <div className="projectDesc2 frosted">
-                            <img className="img2" src={props.img2} />
-                            <p>When the app takes in the users voice it creates a transcript and then saves both the transcript and the audio. Both files are then passed to the rhubarb command line tool which spits out a json file containing the needed lip timings. When the user presses the play button the timings are looped through.
-                                
-                            </p>
-                        </div>
-                    </FullpageSection >
+                        <p >{props.content2}</p>
+                    </div>
                 </FullPageSections>
             </Fullpage>
 

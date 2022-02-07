@@ -7,16 +7,14 @@ function ProjectCard(props) {
             onClick={() => {
                 window.location = props.link;
             }}>
-            <div className="imageOverlap">
-                <img src={props.img} className="cardImage" alt="" />
-                <div className="card__overlay">
-                    <div className="overlay__text">
-                        <h3>{props.title}</h3>
-                        <p>{props.desc}</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+            <figure className="card">
+                <img src={props.img} alt="img13" />
+                <figcaption>
+                    <h3>{props.title}</h3>
+                    <p>{props.desc}</p>
+                </figcaption>
+            </figure>
+        </div >
     );
 }
 export default ProjectCard;

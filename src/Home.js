@@ -4,7 +4,6 @@ import Navbar from "./Components/Navbar";
 import ProjectCard from "./Components/ProjectCard";
 import Stars from "./Stars/Stars";
 import Projects from "./Projects/Projects";
-import Education from "./Education/Education";
 import Particles from "react-particles-js";
 import Fullpage, { FullPageSections, FullpageSection } from '@ap.cx/react-fullpage'
 import AnimatedCursor from "react-animated-cursor"
@@ -14,6 +13,8 @@ import { SocialIcon } from "react-social-icons";
 import Lips from './Images/lips.png';
 import Boids from "./Images/Boids.png";
 import Questie from "./Images/Questie.png";
+import scrollIcon from "./Images/scroll.json";
+import Lottie from "react-lottie-player";
 
 function Home() {
 
@@ -33,24 +34,6 @@ function Home() {
                  */
             }
 
-            <Navbar
-                item1={[
-                    <li className="aboutNav">
-                        <h3>
-                            <Link activeClass="activeNavItem" to="aboutSection" spy={true} smooth={true} offset={-100}>
-                                <i>About</i>
-                            </Link>
-                        </h3>
-                    </li>]}
-                item2={[
-                    <li className="projectsNav">
-                        <h3>
-                            <Link activeClass="activeNavItem" to="projectSection" spy={true} smooth={true} offset={-100}>
-                                <i>Projects</i>
-                            </Link>
-                        </h3>
-                    </li>]}
-            />
 
 
             <div className="particles">
@@ -112,6 +95,7 @@ function Home() {
                 <FullPageSections>
 
                     <FullpageSection><Stars /></FullpageSection>
+
                     <FullpageSection>
                         <MainPage
                             id="aboutSection"
@@ -121,8 +105,7 @@ function Home() {
                                     <SocialIcon
                                         className="socialTag"
                                         url="https://github.com/ScottMilne"
-                                        label="Our portfolio"
-                                        bgColor="#2b2b2b"
+                                        bgColor="white"
                                     />
                                     <SocialIcon
                                         className="socialTag"
@@ -137,19 +120,22 @@ function Home() {
                                 </div>
                             }
                             header='Scott Milne'
-                            subheader='Im a Junior Web Developer and recent graduate from Abertay university based in Glasgow, Scotland'
-            
+                            subheader='Im a Junior Web Developer and recent graduate from Abertay university based in Dunfermline, Scotland.'
+
                         />
                     </FullpageSection>
+                    <div className="arrowContainer" onClick={e => document.getElementById('aboutSection').scrollIntoView()}>
+                        <Lottie className="scrollIcon" loop animationData={scrollIcon} play />
+                    </div>
                     <FullpageSection><MainPage
                         id='projectSection'
                         typewrite='Projects'
                         content={
                             <div className="cards">
-                                <ProjectCard id="lipsyncCard" link='/Projects/LipSync' img={Lips} title="LipSync" desc="A web app designed to produce phonetically accurate lip movements from mic
+                                <ProjectCard id="lipsyncCard" link='/Projects/LipSync' img={Lips} title="TurboSync" desc="A web app designed to produce phonetically accurate lip movements from mic
                             input"/>
                                 <ProjectCard id="FlockCard" link='/Projects/Flock' img={Boids} title="Flocking With Predators" desc="A flocking algorithm with predators chasing prey" />
-                                <ProjectCard id="QuestieCard" link='/Projects/Questie' img={Questie} title="LipSync" desc="A mobile app that allows users to create and complete quests" />
+                                <ProjectCard id="QuestieCard" link='/Projects/Questie' img={Questie} title="Questie" desc="A mobile app that allows users to create and complete quests" />
                             </div>
                         }
                     />

@@ -17,9 +17,13 @@ h1 {
 }
 .introText{
     position: absolute;
-    top: 50vh;
-    left: 20vw;
+    top: 33vh;
+    left: 12vw;
     z-index: 1;
+    max-width: 55vw;
+}
+.introText .Typewriter{
+    font-size: 7em;
 }
 .Typewriter{
     font-size: 80px;

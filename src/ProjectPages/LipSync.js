@@ -10,7 +10,12 @@ function LipSync() {
                 title="TurboSync"
                 img1 = {img1}
                 img2 = {img2}
-                content1="TurboSync is a lip-syncing application I developed while at university with a group of other students. The app takes in the users recording, processes it and then gives back a phonetically accurate animation."/></div>
+                content1="TurboSync is a lip-syncing application I developed while at university with a group of other students. The app takes in the users recording, processes it and then gives back a phonetically accurate animation."
+                content2="uiwebfuiewbfuibuibewfbweufibewfubweiubfweuibfuwiebufiwebuifbweuibfweuibfuiwebfuibwefiuewbufibweubfiisdhbfiuydsbfyusdbfyusdfbvsdyufbvds"
+                
+                
+                /></div>
+
     );
 }
 export default LipSync;
