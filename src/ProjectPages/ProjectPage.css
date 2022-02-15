@@ -14,12 +14,26 @@
     overflow: hidden;
 }
 
+.projectTypewriter .Typewriter {
+    font-size: 45px;
+}
+
+.projectTypewriter .Typewriter .Typewriter__wrapper {
+    text-decoration: underline;
+    text-decoration-color: #5C3797;
+}
+
 .projectDesc {
     right: 20vw;
     width: 60vw;
-    height: 90.4vh;
     text-align: center;
 }
+
+ul li{
+    display: inline;
+    margin: 10px;
+}
+
 .projectDesc p {
     padding-left: 50px;
     font-size: 30px;
@@ -27,12 +41,20 @@
     text-align: left;
     word-break: break-word;
 }
+
+.projectDesc p h2 {
+    text-decoration: underline;
+    text-decoration-color: #5C3797;
+}
+
 .img1 {
     width: 60%;
 }
-.row{
+
+.row {
     display: flex;
 }
+
 .column {
     flex: 50%;
 }

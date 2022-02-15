@@ -3,6 +3,7 @@ import Navbar from "../Components/Navbar";
 import React from 'react'
 import Particles from "react-particles-js";
 import Fullpage, { FullPageSections, FullpageSection } from '@ap.cx/react-fullpage'
+import Typewriter from 'typewriter-effect';
 
 function ProjectPage(props) {
 
@@ -75,19 +76,28 @@ function ProjectPage(props) {
                 />
             </div>
 
-            <Fullpage>
-                <FullPageSections>
-                    <div className="projectDesc frosted">
-                        <h1 className="projectTitle">{props.title}</h1>
+            <div className="projectDesc frosted">
+                <h1 className="projectTitle">{props.title}</h1>
 
-                        <div className="row">
-                            <img className="img1 column" src={props.img1} />
-                            <p className="column">{props.content1}</p>
-                        </div>
-                        <p >{props.content2}</p>
-                    </div>
-                </FullPageSections>
-            </Fullpage>
+                <div className="row">
+                    <img className="img1 column" src={props.img1} />
+                    <p className="column">
+                        <h2>About Project</h2>
+                        {props.content1}</p>
+                </div>
+                <p >{props.content2}</p>
+                <p>
+                    <h2>Built With</h2>
+                    <ul>
+                        {props.builtWith}
+
+                    </ul>
+                    <a href='https://github.com/ScottMilne/TurboSync'>Github Repo</a>
+                </p>
+
+
+            </div>
+
 
         </div>
     );
