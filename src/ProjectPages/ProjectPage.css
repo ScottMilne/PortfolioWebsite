@@ -29,7 +29,11 @@
     text-align: center;
 }
 
-ul li{
+.builtWith{
+    margin-bottom: 100px;
+}
+
+ul li {
     display: inline;
     margin: 10px;
 }
@@ -49,6 +53,15 @@ ul li{
 
 .img1 {
     width: 60%;
+    height: 400px;
+    max-height: 500px;
+    align-self: center;
+}
+
+.img2 {
+    margin: 20px auto 140px auto;
+    display: block;
+    width: 48vw;
 }
 
 .row {

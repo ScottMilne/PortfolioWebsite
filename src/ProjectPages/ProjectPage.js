@@ -1,9 +1,8 @@
 import './ProjectPage.css';
-import Navbar from "../Components/Navbar";
+
 import React from 'react'
 import Particles from "react-particles-js";
-import Fullpage, { FullPageSections, FullpageSection } from '@ap.cx/react-fullpage'
-import Typewriter from 'typewriter-effect';
+
 
 function ProjectPage(props) {
 
@@ -11,15 +10,7 @@ function ProjectPage(props) {
     return (
 
         <div className="projectPage">
-            <Navbar
-                item1={[
-                    <li className="aboutNav">
-                        <h3>
-                            <a href="/">
-                                <i>Home</i>
-                            </a>
-                        </h3>
-                    </li>]} />
+            <div class="link fixed frosted"><h2><a href='../'>←</a></h2></div>
 
             <div className="particles">
                 <Particles
@@ -85,15 +76,20 @@ function ProjectPage(props) {
                         <h2>About Project</h2>
                         {props.content1}</p>
                 </div>
-                <p >{props.content2}</p>
-                <p>
+                <p >
+                    {props.content2}
+                    <img className="img2" src={props.img2} />
+                </p>
+                <p className="builtWith">
                     <h2>Built With</h2>
                     <ul>
                         {props.builtWith}
 
                     </ul>
-                    <a href='https://github.com/ScottMilne/TurboSync'>Github Repo</a>
+
                 </p>
+
+                <div class="link border"><a href={props.github}>Github Link</a></div>
 
 
             </div>

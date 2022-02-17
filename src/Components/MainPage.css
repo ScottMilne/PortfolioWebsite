@@ -17,6 +17,31 @@
   bottom: 35%;
 }
 
+.link {
+  display: inline-block;
+  margin-bottom: 50px;
+  font-size: 30px;
+  line-height: 38px;
+  text-align: left;
+  word-break: break-word;
+  text-decoration: none;
+  transition: .5s;
+}
+
+.link:hover {
+  color: #5C3797;
+}
+
+.border {
+  padding: 10px;
+  border: 1px solid #5C3797;
+}
+
+.fixed {
+  margin-left: 2vw;
+  position: fixed;
+}
+
 figure {
   position: relative;
   float: left;
