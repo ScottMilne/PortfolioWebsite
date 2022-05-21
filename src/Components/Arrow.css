@@ -1,0 +1,27 @@
+.Arrow:hover{
+    cursor: pointer;
+}
+.Arrow{
+    transition: 0.2s;
+}
+.ArrowEnd{
+    margin-bottom: 10px;
+    margin-left: -52.5%;
+    align-self: flex-end;
+}
+.ArrowEnd:hover{
+    margin-bottom: 20px;
+}
+.ArrowStart{
+    margin-top: 10px;
+    margin-left: 50%;
+    margin-right: 50%;
+    align-self: flex-start;
+}
+.ArrowStart:hover{
+    margin-top: 20px;
+}
+
+.DownSolo{
+    margin-left: 102.5vw;
+}

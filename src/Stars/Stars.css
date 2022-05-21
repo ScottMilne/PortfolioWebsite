@@ -1,6 +1,7 @@
 #stars {
     position:relative;
     min-height: 100vh;
+    display: flex;
 }
 h1 {
     color: green;

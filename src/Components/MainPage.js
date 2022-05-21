@@ -1,19 +1,15 @@
 import React from 'react'
-import Particles from "react-particles-js";
-import Fullpage, { FullPageSections, FullpageSection } from '@ap.cx/react-fullpage'
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Typewriter from 'typewriter-effect';
-import { SocialIcon } from "react-social-icons";
-import scrollIcon from "./../Images/scroll.json";
-import Lottie from "react-lottie-player";
 import "./MainPage.css";
+import DownArrow from './DownArrow';
 
 function MainPage(props) {
     AOS.init();
     return (
         <div id={props.id} className="fullPage">
-
+            {props.head}
             <div className="leftText frosted">
                 <Typewriter
                     onInit={(typewriter) => {
@@ -30,7 +26,7 @@ function MainPage(props) {
                 {props.content}
             </div>
 
-
+            {props.foot}
         </div>
     );
 }

@@ -4,7 +4,6 @@ import Navbar from "./Components/Navbar";
 import ProjectCard from "./Components/ProjectCard";
 import Stars from "./Stars/Stars";
 import Projects from "./Projects/Projects";
-import Particles from "react-particles-js";
 import Fullpage, { FullPageSections, FullpageSection } from '@ap.cx/react-fullpage'
 import AnimatedCursor from "react-animated-cursor"
 import React from 'react'
@@ -12,9 +11,12 @@ import { Link } from 'react-scroll'
 import { SocialIcon } from "react-social-icons";
 import Lips from './Images/lips.png';
 import Boids from "./Images/Boids.png";
+import Particles from "./Components/Particles";
 import Questie from "./Images/Questie.png";
 import scrollIcon from "./Images/scroll.json";
+import DownArrow from "./Components/DownArrow";
 import Lottie from "react-lottie-player";
+import UpArrow from "./Components/UpArrow";
 
 function Home() {
 
@@ -37,58 +39,7 @@ function Home() {
 
 
             <div className="particles">
-                <Particles
-                    params={{
-                        particles: {
-                            number: {
-                                value: 500,
-                            },
-                            color: {
-                                value: "#fff",
-                            },
-                            shape: {
-                                type: "circle",
-                                stroke: {
-                                    width: 0,
-                                    color: "#000",
-                                },
-                            },
-                            polygon: {
-                                nb_sides: 5,
-                            },
-                            image: {
-                                width: 100,
-                                height: 100,
-                            },
-                            move: {
-                                enable: false,
-                            },
-                            opacity: {
-                                value: 1,
-                                random: false,
-                                anim: {
-                                    enable: true,
-                                    speed: 0.2,
-                                    opacity_min: 0,
-                                    sync: false,
-                                },
-                            },
-                            size: {
-                                value: 2,
-                                random: true,
-                                anim: {
-                                    enable: true,
-                                    speed: 2,
-                                    size_min: 0,
-                                    sync: false,
-                                },
-                            },
-                            line_linked: {
-                                enable: false,
-                            },
-                        },
-                    }}
-                />
+                <Particles />
 
             </div>
             <Fullpage>
@@ -120,13 +71,13 @@ function Home() {
                                 </div>
                             }
                             header='Scott Milne'
-                            subheader='Im a Junior Web Developer and recent graduate from Abertay university based in Dunfermline, Scotland.'
-
+                            subheader='Im a Junior Web Developer and recent graduate from Abertay university based in Dundee, Scotland.' 
+                            foot={<DownArrow/>}
+                            head={<UpArrow/>}
                         />
+
+                        
                     </FullpageSection>
-                    <div className="arrowContainer" onClick={e => document.getElementById('aboutSection').scrollIntoView()}>
-                        <Lottie className="scrollIcon" loop animationData={scrollIcon} play />
-                    </div>
                     <FullpageSection><MainPage
                         id='projectSection'
                         typewrite='Projects'
@@ -138,6 +89,7 @@ function Home() {
                                 <ProjectCard id="QuestieCard" link='/Projects/Questie' img={Questie} title="Questie" desc="A mobile app that allows users to create and complete quests" />
                             </div>
                         }
+                        head={<UpArrow/>}
                     />
                     </FullpageSection>
 
