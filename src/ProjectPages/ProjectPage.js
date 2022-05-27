@@ -1,7 +1,6 @@
 import './ProjectPage.css';
 
 import React from 'react'
-import Particles from "react-particles-js";
 
 
 function ProjectPage(props) {
@@ -13,58 +12,6 @@ function ProjectPage(props) {
             <div class="link fixed frosted"><h2><a href='../'>←</a></h2></div>
 
             <div className="particles">
-                <Particles
-                    params={{
-                        particles: {
-                            number: {
-                                value: 500,
-                            },
-                            color: {
-                                value: "#fff",
-                            },
-                            shape: {
-                                type: "circle",
-                                stroke: {
-                                    width: 0,
-                                    color: "#000",
-                                },
-                            },
-                            polygon: {
-                                nb_sides: 5,
-                            },
-                            image: {
-                                width: 100,
-                                height: 100,
-                            },
-                            move: {
-                                enable: false,
-                            },
-                            opacity: {
-                                value: 1,
-                                random: false,
-                                anim: {
-                                    enable: true,
-                                    speed: 0.2,
-                                    opacity_min: 0,
-                                    sync: false,
-                                },
-                            },
-                            size: {
-                                value: 2,
-                                random: true,
-                                anim: {
-                                    enable: true,
-                                    speed: 2,
-                                    size_min: 0,
-                                    sync: false,
-                                },
-                            },
-                            line_linked: {
-                                enable: false,
-                            },
-                        },
-                    }}
-                />
             </div>
 
             <div className="projectDesc frosted">

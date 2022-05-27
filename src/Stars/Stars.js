@@ -1,7 +1,5 @@
 import "./Stars.css";
-import Lottie from "react-lottie-player";
 import Moon from "./../Images/moon.svg";
-import scrollIcon from "./../Images/scroll.json";
 import Typewriter from 'typewriter-effect';
 import React from "react";
 import DownArrow from "../Components/DownArrow";

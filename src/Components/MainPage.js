@@ -3,7 +3,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Typewriter from 'typewriter-effect';
 import "./MainPage.css";
-import DownArrow from './DownArrow';
 
 function MainPage(props) {
     AOS.init();

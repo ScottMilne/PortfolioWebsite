@@ -1,21 +1,15 @@
 import "./App.css";
 import MainPage from "./Components/MainPage";
-import Navbar from "./Components/Navbar";
 import ProjectCard from "./Components/ProjectCard";
 import Stars from "./Stars/Stars";
-import Projects from "./Projects/Projects";
 import Fullpage, { FullPageSections, FullpageSection } from '@ap.cx/react-fullpage'
-import AnimatedCursor from "react-animated-cursor"
 import React from 'react'
-import { Link } from 'react-scroll'
 import { SocialIcon } from "react-social-icons";
 import Lips from './Images/lips.png';
 import Boids from "./Images/Boids.png";
 import Particles from "./Components/Particles";
 import Questie from "./Images/Questie.png";
-import scrollIcon from "./Images/scroll.json";
 import DownArrow from "./Components/DownArrow";
-import Lottie from "react-lottie-player";
 import UpArrow from "./Components/UpArrow";
 
 function Home() {

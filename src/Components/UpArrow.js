@@ -1,4 +1,3 @@
-import Lottie from "react-lottie-player";
 import React from "react";
 import './Arrow.css';
 import arrowUp from "./../Images/upArrow.svg";
